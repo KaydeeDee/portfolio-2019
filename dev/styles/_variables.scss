@@ -1,0 +1,11 @@
+// colors
+
+$black: rgb(12,12,12);
+$white: rgb(242,242,242);
+
+// font size
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}

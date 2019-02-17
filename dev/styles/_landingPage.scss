@@ -1,0 +1,64 @@
+.landingPage {
+
+    header {
+        padding-top: 20px;
+        height: 25vh;
+    }
+
+    main {
+        height: 65vh;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+            a {
+                background: $black;
+                color: $white;
+                padding: calc(3px + .5vw) calc(5px + .5vw);
+                @include fontSize(25);
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: space-between;
+                height: 50%;
+            }
+
+            ul:first-child li:nth-child(1),
+            ul:last-child li:nth-child(2) {
+                transform: rotate(20deg);
+            }
+
+            ul:first-child li:nth-child(2),
+            ul:last-child li:nth-child(1) {
+                transform: rotate(-20deg);
+            }
+
+            div {
+                margin: 0 5vw;
+                align-items: center;
+            }
+    }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 1vw 0;
+        }
+
+        h2 {
+            font-size: calc(1.8rem + .8vw);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            height: calc(100vh - 65vh - 25vh);
+            align-items: flex-end;
+            padding-bottom: 10px;
+        }
+}

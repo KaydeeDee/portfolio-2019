@@ -1,0 +1,47 @@
+// body
+body {
+    font-family: OpenDyslexic-Regular, sans-serif;
+    color: $black;
+    @include fontSize(15);
+    background-color: $white;
+}
+
+// anchor tag
+a {
+    color: $black;
+}
+
+nav a {
+    text-transform: uppercase;
+    @include fontSize(20);
+}
+
+// headers
+h1 {
+    text-transform: uppercase;
+    font-size: calc(2.8rem + 1vw);
+}
+
+// default flexed
+nav, ul, footer {
+    display: flex;
+}
+
+// svg
+
+svg {
+    width: 100%;
+}
+
+// wrapper
+.wrapper {
+    max-width: 1700px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.innerWrapper {
+        max-width: 1200px;
+        width: 80%;
+        margin: 0 auto;
+    }
