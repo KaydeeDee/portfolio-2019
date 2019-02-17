@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <style>
+
+        body, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1700px;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        ul {
+        list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: black;
+        }
+
+        @keyframes windowTransition {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: -100vw;
+        }    
+        }
+
+        .elementFun {
+            animation: windowTransition 1.3s ease-in forwards;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background: lightgrey;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 20vh;
+        }
+
+        ul {
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+        }
+
+        section {
+            display: flex;
+        }
+
+        section p {
+            margin-right: 4vw;
+        }
+
+        main {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            height: 10vh;
+            display: flex;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body class="wrapper">
+    <div class="elementFun">
+    </div>
+    <header>
+        <nav>
+            <div>
+                <img src="" alt="">
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./work.html">work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum perspiciatis sapiente possimus suscipit perferendis nihil, ratione asperiores, sunt dolorum sequi dolore consequuntur vitae fugiat id architecto blanditiis quaerat et distinctio.</p>
+            <img src="https://www.placecage.com/400/400" alt="placeholder">
+        </section>
+    </main>
+    <footer>
+        <p>testing</p>
+    </footer>
+</body>
+</html>
