@@ -1,0 +1,71 @@
+.aboutPage {
+    nav {
+            justify-content: center;
+            height: 15vh;
+
+            ul {
+                width: 35%;
+                margin-top: 10px;
+            }
+
+            ul li {
+                margin: 0 10px;
+            }
+
+            ul a {
+                padding: 10px 20px;
+            }
+        }
+
+    h1 {
+        margin-bottom: calc(5px + .5vw);
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > img {
+                width: 30%;
+                border-radius: 50%;
+            }
+        }
+
+        .aboutMeWording {
+            max-width: 65%;
+
+            p {
+                margin-bottom: calc(15px + 1vw);
+            }
+        }
+    }
+
+    .socialContacts {
+
+        img {
+            width: 50px;
+            display: block;
+        }
+
+        li:not(:last-of-type) {
+            margin-right: calc(30px + .5vw);
+        }
+    }
+    
+    footer {
+        height: 10vh;
+        display: flex;
+        align-items: flex-end;
+    }
+}

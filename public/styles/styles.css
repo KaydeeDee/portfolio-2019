@@ -151,8 +151,8 @@ a {
 body {
   font-family: OpenDyslexic-Regular, sans-serif;
   color: #0c0c0c;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 17px;
+  font-size: 1.7rem;
   background-color: #f2f2f2; }
 
 a {
@@ -161,18 +161,23 @@ a {
 nav a {
   text-transform: uppercase;
   font-size: 20px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  letter-spacing: 1.2px; }
+
+p {
+  line-height: 1.8; }
 
 h1 {
   text-transform: uppercase;
-  font-size: calc(2.8rem + 1vw); }
+  font-size: calc(2.8rem + 1vw);
+  letter-spacing: 2px; }
 
 nav, ul, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-svg {
+svg, img {
   width: 100%; }
 
 .wrapper {
@@ -353,3 +358,68 @@ svg {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 10px; }
+
+.aboutPage nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15vh; }
+  .aboutPage nav ul {
+    width: 35%;
+    margin-top: 10px; }
+  .aboutPage nav ul li {
+    margin: 0 10px; }
+  .aboutPage nav ul a {
+    padding: 10px 20px; }
+
+.aboutPage h1 {
+  margin-bottom: calc(5px + .5vw); }
+
+.aboutPage main {
+  height: 70vh; }
+
+.aboutPage section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%; }
+  .aboutPage section > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .aboutPage section > div > img {
+      width: 30%;
+      border-radius: 50%; }
+  .aboutPage section .aboutMeWording {
+    max-width: 65%; }
+    .aboutPage section .aboutMeWording p {
+      margin-bottom: calc(15px + 1vw); }
+
+.aboutPage .socialContacts img {
+  width: 50px;
+  display: block; }
+
+.aboutPage .socialContacts li:not(:last-of-type) {
+  margin-right: calc(30px + .5vw); }
+
+.aboutPage footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }

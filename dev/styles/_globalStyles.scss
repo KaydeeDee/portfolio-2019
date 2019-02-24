@@ -2,7 +2,7 @@
 body {
     font-family: OpenDyslexic-Regular, sans-serif;
     color: $black;
-    @include fontSize(15);
+    @include fontSize(17);
     background-color: $white;
 }
 
@@ -14,12 +14,19 @@ a {
 nav a {
     text-transform: uppercase;
     @include fontSize(20);
+    letter-spacing: 1.2px;
+}
+
+// paragraphs
+p {
+    line-height: 1.8;
 }
 
 // headers
 h1 {
     text-transform: uppercase;
     font-size: calc(2.8rem + 1vw);
+    letter-spacing: 2px;
 }
 
 // default flexed
@@ -27,9 +34,9 @@ nav, ul, footer {
     display: flex;
 }
 
-// svg
+// svg + img
 
-svg {
+svg, img {
     width: 100%;
 }
 

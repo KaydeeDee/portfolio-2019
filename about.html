@@ -6,57 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/styles/styles.css">
     <title>About</title>
-    <style>
-        nav {
-            justify-content: center;
-            height: 15vh;
-        }
-
-        ul {
-            width: 35%;
-            /* justify-content: space-between; */
-            margin-top: 10px;
-        }
-
-        ul li {
-            margin: 0 10px;
-        }
-
-        ul a {
-            padding: 10px 20px;
-        }
-
-        section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        section p {
-            margin-right: 4vw;
-        }
-
-        main {
-            height: 70vh;
-            /* display: flex; */
-            /* justify-content: center; */
-            /* align-items: center; */
-        }
-
-        footer {
-            height: 10vh;
-            display: flex;
-            align-items: flex-end;
-        }
-
-
-        img {
-            border-radius: 50%;
-        }
-    </style>
 </head>
-<body class="wrapper">
+<body class="wrapper aboutPage">
     <!-- <div class="elementFun">
     </div> -->
     <header>
@@ -70,14 +21,40 @@
         </nav>
     </header>
     <main class="innerWrapper">
-        <h1>about</h1>
         <section>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum perspiciatis sapiente possimus suscipit perferendis nihil, ratione asperiores, sunt dolorum sequi dolore consequuntur vitae fugiat id architecto blanditiis quaerat et distinctio.</p>
-            <img src="https://www.placecage.com/400/400" alt="placeholder">
+            <h1>about</h1>
+            <div>
+                <div class="aboutMeWording">
+                    <p><em>I'm Katie, and I'm a Web Developer.</em></p>
+                    
+                    <p>I'm a natural problem solver who isn't scared of a challenge and am a firm believer that being able to laugh at yourself
+                    makes any project possible.</p>
+                    
+                    <p>I'm a "big picture"​ thinker who is able to see problems before they happen, leading to balanced, complete, responsive,
+                    projects in web development and digital outreach. Web development is my specialty, but working with people for people is
+                    what I do best. I believe in working towards greater digital access for all, the passion and dedication of small teams,
+                    the unlimited potential of technology, and the power of a good cup of coffee.</p>
+                    <ul class="socialContacts">
+                        <li>
+                            <a href="#"><img src="./public/assets/fontAwesome/github.svg" alt="Click here to go to my GitHub page"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./public/assets/fontAwesome/twitter.svg" alt="Click here to go to my Twitter page"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./public/assets/fontAwesome/linkedin.svg" alt="Click here to go to my Linkedin page"></a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://www.placecage.com/400/400" alt="placeholder">
+            </div>
         </section>
     </main>
     <footer>
         <p>testing</p>
     </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
 </body>
 </html>
