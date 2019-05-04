@@ -13,7 +13,7 @@
 }
 
 .fadeIn {
-    animation: fadeIn 0.5s ease-in 1 0.3s backwards;
+    animation: fadeIn 0.8s ease-in 1 0.3s backwards;
 }
 
 // Global Screen Transition
@@ -45,12 +45,11 @@
 
 @keyframes flickeringLight {
     0%, 25%, 50%, 70% {
-        stroke: black;
+        stroke: $black;
         stroke-width: 2;
     }
-    20%, 40%, 65%, 75%,  100% {
-        stroke: #ffae42;
-        text-shadow: 10px 10px 10px red;
+    20%, 40%, 65%, 75%, 100% {
+        stroke: $accent;
         stroke-width: 7;
     }
 }
@@ -58,7 +57,7 @@
 .lightbulb-coil {
     stroke-dasharray: 730.0150146484375;
     stroke-dashoffset: 730.0150146484375;
-    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2)) blur(0.8px); 
     animation: lightbulbCoil 1.8s linear .5s 1 forwards, flickeringLight 2s ease-in 3s 1 forwards;
 }
 
@@ -93,4 +92,23 @@
 // nav hover effect in other pages
 .aboutPage nav a:hover {
     box-shadow: inset 0px -25px 0 0 rgba(0,0,0,0.5);
+}
+
+
+// @keyframes testing {
+//      0%, 25%, 70% {
+//         stroke: $accent;
+//         stroke-width: 7;
+//         stroke-dashoffset: 0;
+//     }
+//     40%, 65%, 75%, 100% {
+//         stroke: pink;
+//         stroke-width: 9;
+//         stroke-dashoffset: 0;
+//     }
+// }
+
+.red {
+    filter: blur(5px);
+    transition: 0.4s ease-in;
 }

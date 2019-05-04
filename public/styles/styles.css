@@ -67,9 +67,6 @@ sub {
 img {
   border: 0; }
 
-svg:not(:root) {
-  overflow: hidden; }
-
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
@@ -131,7 +128,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: OpenDyslexic-Regular;
+  font-family: "OpenDyslexic-Regular";
   src: url(../../public/assets/font/OpenDyslexic2/OpenDyslexic-Regular.otf); }
 
 html {
@@ -149,27 +146,19 @@ a {
   display: inline-block; }
 
 body {
-  font-family: OpenDyslexic-Regular, sans-serif;
+  font-family: "OpenDyslexic-Regular", sans-serif;
   color: #0c0c0c;
-  font-size: 17px;
-  font-size: 1.7rem;
-  background-color: #f2f2f2; }
+  font-size: 16px;
+  font-size: 1.6rem;
+  background: #f2f2f2;
+  line-height: 1.6; }
 
 a {
   color: #0c0c0c; }
 
-nav a {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-size: 2rem;
-  letter-spacing: 1.2px; }
-
-p {
-  line-height: 1.8; }
-
 h1 {
   text-transform: uppercase;
-  font-size: calc(2.8rem + 1vw);
+  font-size: calc(2.7rem + 1vw);
   letter-spacing: 2px; }
 
 nav, ul, footer {
@@ -207,8 +196,8 @@ svg, img {
     opacity: 1; } }
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.5s ease-in 1 0.3s backwards;
-          animation: fadeIn 0.5s ease-in 1 0.3s backwards; }
+  -webkit-animation: fadeIn 0.8s ease-in 1 0.3s backwards;
+          animation: fadeIn 0.8s ease-in 1 0.3s backwards; }
 
 @-webkit-keyframes windowTransition {
   0% {
@@ -241,27 +230,25 @@ svg, img {
 
 @-webkit-keyframes flickeringLight {
   0%, 25%, 50%, 70% {
-    stroke: black;
+    stroke: #0c0c0c;
     stroke-width: 2; }
   20%, 40%, 65%, 75%, 100% {
     stroke: #ffae42;
-    text-shadow: 10px 10px 10px red;
     stroke-width: 7; } }
 
 @keyframes flickeringLight {
   0%, 25%, 50%, 70% {
-    stroke: black;
+    stroke: #0c0c0c;
     stroke-width: 2; }
   20%, 40%, 65%, 75%, 100% {
     stroke: #ffae42;
-    text-shadow: 10px 10px 10px red;
     stroke-width: 7; } }
 
 .lightbulb-coil {
   stroke-dasharray: 730.0150146484375;
   stroke-dashoffset: 730.0150146484375;
-  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2)) blur(0.8px);
+          filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2)) blur(0.8px);
   -webkit-animation: lightbulbCoil 1.8s linear .5s 1 forwards, flickeringLight 2s ease-in 3s 1 forwards;
           animation: lightbulbCoil 1.8s linear .5s 1 forwards, flickeringLight 2s ease-in 3s 1 forwards; }
 
@@ -297,12 +284,21 @@ svg, img {
   -webkit-box-shadow: inset 0px -25px 0 0 rgba(0, 0, 0, 0.5);
           box-shadow: inset 0px -25px 0 0 rgba(0, 0, 0, 0.5); }
 
+.red {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in; }
+
 .landingPage header {
-  padding-top: 20px;
-  height: 25vh; }
+  padding-top: 10px;
+  min-height: 20vh; }
 
 .landingPage main {
-  height: 65vh; }
+  height: 75vh;
+  min-height: 400px; }
+  .landingPage main svg {
+    height: 54vh; }
 
 .landingPage nav {
   -webkit-box-pack: center;
@@ -317,7 +313,11 @@ svg, img {
     color: #f2f2f2;
     padding: calc(3px + .5vw) calc(5px + .5vw);
     font-size: 25px;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; }
+  .landingPage nav a:active, .landingPage nav a:hover {
+    color: #ffae42; }
   .landingPage nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -336,7 +336,7 @@ svg, img {
     -webkit-transform: rotate(-20deg);
             transform: rotate(-20deg); }
   .landingPage nav div {
-    margin: 0 5vw;
+    margin: 0 4.5vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -345,7 +345,7 @@ svg, img {
   text-align: center; }
 
 .landingPage h1 {
-  margin: 0 0 1vw 0; }
+  margin: 0 0 .5vw 0; }
 
 .landingPage h2 {
   font-size: calc(1.8rem + .8vw); }
@@ -357,7 +357,7 @@ svg, img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: calc(100vh - 65vh - 25vh);
+  height: calc(100vh - (75vh + 20vh));
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;

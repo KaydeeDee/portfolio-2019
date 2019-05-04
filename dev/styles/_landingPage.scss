@@ -1,12 +1,17 @@
 .landingPage {
 
     header {
-        padding-top: 20px;
-        height: 25vh;
+        padding-top: 10px;
+        min-height: 20vh;
     }
 
     main {
-        height: 65vh;
+        height: 75vh;
+        min-height: 400px;
+
+        svg {
+            height: 54vh;
+        }
     }
 
     nav {
@@ -18,7 +23,14 @@
                 color: $white;
                 padding: calc(3px + .5vw) calc(5px + .5vw);
                 @include fontSize(25);
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+                // @include anchorHover(white);
             }
+
+            #{$a-tags-hover} {
+                    color: $accent;
+                }
 
             ul {
                 flex-direction: column;
@@ -37,7 +49,7 @@
             }
 
             div {
-                margin: 0 5vw;
+                margin: 0 4.5vw;
                 align-items: center;
             }
     }
@@ -47,7 +59,7 @@
         }
 
         h1 {
-            margin: 0 0 1vw 0;
+            margin: 0 0 .5vw 0;
         }
 
         h2 {
@@ -57,7 +69,7 @@
         footer {
             display: flex;
             justify-content: space-between;
-            height: calc(100vh - 65vh - 25vh);
+            height: calc(100vh - (75vh + 20vh));
             align-items: flex-end;
             padding-bottom: 10px;
         }

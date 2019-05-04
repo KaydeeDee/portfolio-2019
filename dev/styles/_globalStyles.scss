@@ -1,9 +1,13 @@
+
+
+
 // body
 body {
-    font-family: OpenDyslexic-Regular, sans-serif;
+    font-family: "OpenDyslexic-Regular", sans-serif;
     color: $black;
-    @include fontSize(17);
-    background-color: $white;
+    @include fontSize(16);
+    background: $white;
+    line-height: 1.6;
 }
 
 // anchor tag
@@ -11,21 +15,10 @@ a {
     color: $black;
 }
 
-nav a {
-    text-transform: uppercase;
-    @include fontSize(20);
-    letter-spacing: 1.2px;
-}
-
-// paragraphs
-p {
-    line-height: 1.8;
-}
-
 // headers
 h1 {
     text-transform: uppercase;
-    font-size: calc(2.8rem + 1vw);
+    font-size: calc(2.7rem + 1vw);
     letter-spacing: 2px;
 }
 
