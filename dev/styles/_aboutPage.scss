@@ -1,19 +1,36 @@
 .aboutPage {
+    svg {
+                position: absolute;
+                top: -180px;
+                left: -80px;
+
+                #Path-2 {
+                    stroke: $accent;
+                }
+            }
+
     nav {
             justify-content: center;
-            height: 15vh;
+            align-items: flex-start;
+            min-height: 150px;
 
             ul {
-                width: 35%;
+                width: 50%;
                 margin-top: 10px;
             }
 
             ul li {
-                margin: 0 10px;
-            }
+                width: calc(100%/4);
+                text-align: center;
 
-            ul a {
-                padding: 10px 20px;
+                a {
+                    padding: 15px;
+                    @include fontSize(20)
+                }
+
+                #{$a-tags-hover} {
+                    box-shadow: inset 0px -27px 0 0 rgba($accent,0.6);
+                }
             }
         }
 
@@ -23,21 +40,17 @@
 
     main {
         height: 70vh;
+        position: relative;
+        padding-top: 10vh;
     }
 
     section {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-
-        div:nth-child(2) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
 
             > img {
-                width: 30%;
+                max-width: 30%;
                 border-radius: 50%;
             }
         }
@@ -53,19 +66,18 @@
 
     .socialContacts {
 
-        img {
-            width: 50px;
-            display: block;
+        i {
+            font-size: 50px;
         }
 
         li:not(:last-of-type) {
             margin-right: calc(30px + .5vw);
         }
+
+        li {
+            #{$a-tags-hover} {
+                color: $accent;
+                filter: drop-shadow(2px 2px 2px rgba($black, 0.4));
+            }
+        }
     }
-    
-    footer {
-        height: 10vh;
-        display: flex;
-        align-items: flex-end;
-    }
-}

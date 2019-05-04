@@ -148,8 +148,8 @@ a {
 body {
   font-family: "OpenDyslexic-Regular", sans-serif;
   color: #0c0c0c;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   background: #f2f2f2;
   line-height: 1.6; }
 
@@ -280,10 +280,6 @@ svg, img {
   -webkit-animation: lightbulbBottom 2s linear .5s 1 forwards;
           animation: lightbulbBottom 2s linear .5s 1 forwards; }
 
-.aboutPage nav a:hover {
-  -webkit-box-shadow: inset 0px -25px 0 0 rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0px -25px 0 0 rgba(0, 0, 0, 0.5); }
-
 .red {
   -webkit-filter: blur(5px);
           filter: blur(5px);
@@ -292,13 +288,13 @@ svg, img {
 
 .landingPage header {
   padding-top: 10px;
-  min-height: 20vh; }
+  min-height: 150px; }
 
 .landingPage main {
   height: 75vh;
   min-height: 400px; }
   .landingPage main svg {
-    height: 54vh; }
+    height: 55vh; }
 
 .landingPage nav {
   -webkit-box-pack: center;
@@ -307,7 +303,8 @@ svg, img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%; }
+  height: 100%;
+  padding-top: 5vw; }
   .landingPage nav a {
     background: #0c0c0c;
     color: #f2f2f2;
@@ -316,7 +313,7 @@ svg, img {
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 1.2px; }
-  .landingPage nav a:active, .landingPage nav a:hover {
+  .landingPage nav a:active, .landingPage nav a:hover, .landingPage nav a:focus {
     color: #ffae42; }
   .landingPage nav ul {
     -webkit-box-orient: vertical;
@@ -357,73 +354,97 @@ svg, img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: calc(100vh - (75vh + 20vh));
+  height: calc(100vh - (75vh + 150px));
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 10px; }
 
+.aboutPage svg {
+  position: absolute;
+  top: -180px;
+  left: -80px; }
+  .aboutPage svg #Path-2 {
+    stroke: #ffae42; }
+
 .aboutPage nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 15vh; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 150px; }
   .aboutPage nav ul {
-    width: 35%;
+    width: 50%;
     margin-top: 10px; }
   .aboutPage nav ul li {
-    margin: 0 10px; }
-  .aboutPage nav ul a {
-    padding: 10px 20px; }
+    width: calc(100%/4);
+    text-align: center; }
+    .aboutPage nav ul li a {
+      padding: 15px;
+      font-size: 20px;
+      font-size: 2rem; }
+    .aboutPage nav ul li a:active, .aboutPage nav ul li a:hover, .aboutPage nav ul li a:focus {
+      -webkit-box-shadow: inset 0px -27px 0 0 rgba(255, 174, 66, 0.6);
+              box-shadow: inset 0px -27px 0 0 rgba(255, 174, 66, 0.6); }
 
 .aboutPage h1 {
   margin-bottom: calc(5px + .5vw); }
 
 .aboutPage main {
-  height: 70vh; }
+  height: 70vh;
+  position: relative;
+  padding-top: 10vh; }
 
 .aboutPage section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%; }
-  .aboutPage section div:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .aboutPage section div:nth-child(2) > img {
-      width: 30%;
-      border-radius: 50%; }
-  .aboutPage section .aboutMeWording {
-    max-width: 65%; }
-    .aboutPage section .aboutMeWording p {
-      margin-bottom: calc(15px + 1vw); }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .aboutPage section > img {
+    max-width: 30%;
+    border-radius: 50%; }
 
-.aboutPage .socialContacts img {
-  width: 50px;
-  display: block; }
+.aboutPage .aboutMeWording {
+  max-width: 65%; }
+  .aboutPage .aboutMeWording p {
+    margin-bottom: calc(15px + 1vw); }
 
-.aboutPage .socialContacts li:not(:last-of-type) {
+.socialContacts i {
+  font-size: 50px; }
+
+.socialContacts li:not(:last-of-type) {
   margin-right: calc(30px + .5vw); }
 
-.aboutPage footer {
-  height: 10vh;
+.socialContacts li a:active, .socialContacts li a:hover, .socialContacts li a:focus {
+  color: #ffae42;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(12, 12, 12, 0.4));
+          filter: drop-shadow(2px 2px 2px rgba(12, 12, 12, 0.4)); }
+
+.contactPage section {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  display: flex; }
+  .contactPage section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.contactPage ul, .contactPage form {
+  width: 45%; }
+
+.contactPage form {
+  min-width: 400px; }
+
+.contactPage input, .contactPage textarea, .contactPage button {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none; }

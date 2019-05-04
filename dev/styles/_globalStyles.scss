@@ -5,7 +5,7 @@
 body {
     font-family: "OpenDyslexic-Regular", sans-serif;
     color: $black;
-    @include fontSize(16);
+    @include fontSize(18);
     background: $white;
     line-height: 1.6;
 }

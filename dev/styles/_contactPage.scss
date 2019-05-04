@@ -1,0 +1,23 @@
+.contactPage {
+    section {
+        display: flex;
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    ul, form {
+        width: 45%;
+    }
+
+    form {
+        min-width: 400px;
+    }
+
+    input, textarea, button {
+            display: block;
+            width: 100%;
+        }
+
+}
